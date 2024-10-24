@@ -1,0 +1,18 @@
+// Variables
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+
+// Example of nesting and using variables
+body {
+  background-color: $primary-color;
+  color: white;
+
+  a {
+    color: $secondary-color;
+
+    &:hover {
+      color: darken($secondary-color, 10%);
+    }
+  }
+}
+
